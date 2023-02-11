@@ -5,7 +5,7 @@ import os
 
 CHANNEL_NAME = 'OfficialPersianTwitter'
 PATH = './crawled_messages'
-COUNT = 100
+COUNT = 20
 
 def call_telegram_api(addr):
     resp = requests.get(url=addr, params={})
