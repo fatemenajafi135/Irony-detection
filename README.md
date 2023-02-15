@@ -50,3 +50,14 @@ python predict.py  --datapath [path to dataset] --modelpath [path to transformer
 # example
 python predict.py --datapath ../dataset/ --modelpath xlm-roberta-base --predspath runs/preds
 ```
+
+## Results
+
+Comparison of different finetuned language models on the Persian dataset   
+
+| Language Model | Accuracy | Recall | Precision | F1 |
+| - | - | - | - | - |
+| [ParsBert vr3](https://huggingface.co/HooshvareLab/bert-fa-zwnj-base) | 81.3% | 81.4% | 81.3% | 81.3% |
+| [XLM-RoBERTa-Base](https://huggingface.co/xlm-roberta-base) | 82.6% | 82.8% | 82.6% | 82.5% |
+| [__XLM-RoBERTa-Large__](https://huggingface.co/xlm-roberta-large) | __84.7%__ | __84.7%__ | __84.6%__ | __84.6%__ |
+
