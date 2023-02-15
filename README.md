@@ -29,3 +29,24 @@ python labeling.py
 
 ## Model
 Finetuning an uncased language model on the Persian irony detection dataset
+
+``` shell
+cd model 
+pip install -r requirements.txt
+```
+
+**Finetuning** a transformer-based language model on irony detection dataset
+
+``` shell
+python train.py  --datapath [path to dataset] --modelpath [path to transformer-based language model] --modelout [path to save finetuned model] --savemodel [path to save finetuned model] --maxlen [maximum sequence length] --batch [batch size] --epoch [epochs] --lr [learning rate]
+# example
+python train.py --datapath ../dataset/ --modelpath xlm-roberta-base --batch 16 --epoch 5
+```
+
+**Predict** label using trained model
+
+``` shell
+python predict.py  --datapath [path to dataset] --modelpath [path to transformer-based language model] --predspath [path for preditions of test set] --maxlen [maximum sequence length] --batch [batch size] --epoch [epochs] --lr [learning rate]
+# example
+python predict.py --datapath ../dataset/ --modelpath xlm-roberta-base --predspath runs/preds
+```

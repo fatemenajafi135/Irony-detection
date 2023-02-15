@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+torch
+transformers
+datasets
+seqeval
+tqdm

@@ -1,6 +1,9 @@
-# Ignore crawled messages files
+# crawled messages files
 creating_dataset/crawled_messages
 
-# Ignore gathered dataset csv file
+# gathered dataset csv file
 creating_dataset/messages.csv
 creating_dataset/messages_cleaned.csv
+
+# models, prediction files, etc
+model/runs/ 
