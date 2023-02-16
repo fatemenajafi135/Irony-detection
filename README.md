@@ -8,7 +8,7 @@
 **Existing datasets**: 
 - Persian manually labeled dataset: [MirasIrony](https://github.com/miras-tech/MirasText/tree/master/MirasIrony) 
 
-- Persian automatically labeled dataset: [Persian Irony Detection](https://github.com/fatemenajafi135/Irony-detection/dataset)
+- Persian automatically labeled dataset: [Persian Irony Detection](https://github.com/fatemenajafi135/Irony-detection/tree/main/dataset)
 
 
 **Create new dataset steps** (Crawling Persian tweets from a channel on Telegram and automatically labeling them)
@@ -18,7 +18,7 @@
 - **labeling**: Set label to each tweet by its top-2 common reactions and split dataset to Train and Test sets. It saves files in ```../dataset/```. 
 
 - **Run**: (The previous dataset will be replaced)
-```
+``` shell
 cd creating_dataset/
 pip install requirements.txt
 python crawling.py
@@ -31,7 +31,7 @@ python labeling.py
 Finetuning an uncased language model on the Persian irony detection dataset
 
 ``` shell
-cd model 
+cd model/ 
 pip install -r requirements.txt
 ```
 
